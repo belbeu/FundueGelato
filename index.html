@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundue Gelato | Empresa</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <section id="secao-home" style="height: 100vh; margin: 0; padding: 0;">
+    <header>
+        <nav class="navegacao" id="navbar">
+            <a href="index.html"><img src="images/logo.png" alt="Logo da Fundue Gelato" class="logo"></a>
+            <ul class="menu">
+                <li><a href="#secao-home">Home</a></li>
+                <li><a href="empresa.html">Sobre Nós</a></li>
+                <li><a href="produtos.html">FG</a></li>
+                <li><a href="contato.html" id="Contato-btn">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="titulo">
+        <h1>FUNDUE GELATO</h1>
+        <main>SEU DOCE SONHO</main>
+    </div>
+
+     <div class="wave-home">
+       <svg viewBox="0 0 550 150" preserveAspectRatio="none">
+        <path d="M0.00,49.98 
+                 C150.00,150.00 349.54,-50.00 500.00,49.98 
+                 L500.00,150.00 L0.00,150.00 Z" 
+              style="stroke: none; fill: #f8a6a8;"></path>
+    </svg>
+    </div>
+
+    </section>
+
+    <section id="secao-sobre" style="background-color: #f8a6a8; height: 100vh; margin: 0; padding: 0;">
+    <h1>a</h1>
+    </section>
+
+    <script>
+    const navbar = document.getElementById("navbar");
+    const homeSection = document.getElementById("secao-home");
+    const fgSection = document.getElementById("secao-fg");
+
+    let isInSpecialSection = false; 
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.id === "secao-home" || entry.target.id === "secao-fg") {
+                    isInSpecialSection = true;
+                    navbar.classList.remove("navbar-branca"); // rosa original
+                } else {
+                    isInSpecialSection = false;
+                    navbar.classList.add("navbar-branca"); // branca
+                }
+            }
+        });
+    }, { threshold: 0.3 }); // considera visível com 30% da seção na tela
+
+    observer.observe(homeSection);
+    observer.observe(fgSection);
+</script>
+</body>
+</html>
