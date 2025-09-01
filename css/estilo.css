@@ -335,6 +335,61 @@ header h1{
     background: #7a3c1a;
 }
 
+/* ===== PÁGINA OBRIGADO ===== */
+.obrigado-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fccae8, #fff0f6);
+    text-align: center;
+    padding: 20px;
+}
+
+.obrigado-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.obrigado-card h2 {
+    font-size: 2.5rem;
+    color: #a0522d;
+    margin-bottom: 15px;
+}
+
+.obrigado-card p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #a0522d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background: #7a3c1a;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
 @media (max-width: 768px) {
     #contato {
         flex-direction: column;
