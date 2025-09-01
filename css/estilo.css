@@ -262,6 +262,89 @@ header h1{
     margin-bottom: 20px;
 }
 
+/* ===== CONTATO ===== */
+#contato {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 10%;
+    background: #ffffff;
+    height: auto; 
+}
+
+#contato .ctt-img,
+#contato .ctt-form {
+    flex: 1;
+}
+
+#contato .ctt-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#contato label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+#contato input, 
+#contato textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+}
+
+#contato input:focus, 
+#contato textarea:focus {
+    border-color: #a0522d; 
+    box-shadow: 0 0 5px rgba(160,82,45,0.4);
+}
+
+#contato button {
+    padding: 12px;
+    background: #a0522d;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contato button:hover {
+    background: #7a3c1a;
+}
+
+@media (max-width: 768px) {
+    #contato {
+        flex-direction: column;
+        text-align: center;
+    }
+    #contato .ctt-img img {
+        max-width: 100%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     header nav {
         flex-direction: column;
