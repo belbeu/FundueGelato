@@ -8,62 +8,96 @@
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
-    <section id="secao-home" style="height: 100vh; margin: 0; padding: 0;">
-    <header>
         <nav class="navegacao" id="navbar">
             <a href="index.html"><img src="images/logo.png" alt="Logo da Fundue Gelato" class="logo"></a>
             <ul class="menu">
-                <li><a href="#secao-home">Home</a></li>
-                <li><a href="empresa.html">Sobre Nós</a></li>
-                <li><a href="produtos.html">FG</a></li>
-                <li><a href="contato.html" id="Contato-btn">Contato</a></li>
+                <li><a href="#secao-home">HOME</a></li>
+                <li><a href="#secao-sobre">SOBRE NÓS</a></li>
+                <li><a href="#secao-mvv">FUNDUE GELATO</a></li>
+                <li><a href="#secao-obj">OBJETIVO</a></li>
+                <li><a href="#" id="Contato-btn">CONTATO</a></li>
             </ul>
         </nav>
-    </header>
 
-    <div class="titulo">
+   <header id="secao-home">
+    <div class="text">
         <h1>FUNDUE GELATO</h1>
         <main>SEU DOCE SONHO</main>
     </div>
 
-     <div class="wave-home">
-       <svg viewBox="0 0 550 150" preserveAspectRatio="none">
-        <path d="M0.00,49.98 
-                 C150.00,150.00 349.54,-50.00 500.00,49.98 
-                 L500.00,150.00 L0.00,150.00 Z" 
-              style="stroke: none; fill: #f8a6a8;"></path>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+        <path
+          class="wave1"
+          fill="#e7008a" 
+          fill-opacity="1" 
+          d="M0,96L21.8,117.3C43.6,139,87,181,131,202.7C174.5,224,218,224,262,192C305.5,160,349,96,393,112C436.4,128,480,224,524,240C567.3,256,611,192,655,170.7C698.2,149,742,171,785,202.7C829.1,235,873,277,916,261.3C960,245,1004,171,1047,133.3C1090.9,96,1135,96,1178,106.7C1221.8,117,1265,139,1309,128C1352.7,117,1396,75,1418,53.3L1440,32L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+        </path>
+
+        <path 
+        class="wave2"
+        fill="#ff70c6" 
+        fill-opacity="1" 
+        d="M0,64L18.5,101.3C36.9,139,74,213,111,240C147.7,267,185,245,222,197.3C258.5,149,295,75,332,42.7C369.2,11,406,21,443,53.3C480,85,517,139,554,149.3C590.8,160,628,128,665,133.3C701.5,139,738,181,775,176C812.3,171,849,117,886,101.3C923.1,85,960,107,997,138.7C1033.8,171,1071,213,1108,218.7C1144.6,224,1182,192,1218,176C1255.4,160,1292,160,1329,138.7C1366.2,117,1403,75,1422,53.3L1440,32L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path>
+
+        <path 
+        class="wave3"
+        fill="#fccae8" 
+        fill-opacity="1" 
+        d="M0,32L30,37.3C60,43,120,53,180,101.3C240,149,300,235,360,250.7C420,267,480,213,540,197.3C600,181,660,203,720,192C780,181,840,139,900,138.7C960,139,1020,181,1080,170.7C1140,160,1200,96,1260,96C1320,96,1380,160,1410,192L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+
     </svg>
+    </header>
+
+    <section id="secao-sobre">
+        <div class="sobre">
+            <div class="text">
+            <h1>SOBRE NÓS</h1>
+            <p>A Fundue Gelato é uma empresa dedicada a proporcionar momentos doces e inesquecíveis através de nossos deliciosos gelatos artesanais. Fundada em 2020, nossa missão é oferecer produtos de alta qualidade, feitos com ingredientes frescos e naturais, sem aditivos artificiais.</p>
+            <p>Nossos gelatos são preparados diariamente por uma equipe apaixonada por criar sabores únicos e inovadores, que agradam a todos os paladares. Desde os clássicos como baunilha e chocolate até combinações exclusivas como pistache com flor de sal, cada sabor é cuidadosamente elaborado para garantir uma experiência sensorial completa.</p>
+            <p>Além de nossos gelatos, também oferecemos uma variedade de toppings e acompanhamentos para personalizar sua sobremesa. Seja em uma casquinha crocante, em um copo ou como parte de uma sobremesa mais elaborada, nosso objetivo é tornar cada visita à Fundue Gelato especial.</p>
+            <p>Estamos comprometidos com a sustentabilidade e a responsabilidade social, utilizando embalagens eco-friendly e apoiando produtores locais sempre que possível. Na Fundue Gelato, acreditamos que o prazer de um bom gelato deve ser compartilhado com o mundo de maneira consciente.</p>
+            <p>Venha nos visitar e descubra por que a Fundue Gelato é o destino favorito dos amantes de gelato. Estamos ansiosos para adoçar seu dia!</p>
+            </div>
+            <div class="vetor">
+            <img src="images/vetor1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="secao-mvv">
+    <div class="card-container">
+        <div class="card">
+            <img src="images/missao.png" alt="">
+            <h2>MISSÃO</h2>
+            <p>Proporcionar momentos doces e inesquecíveis através de gelatos artesanais de alta qualidade, feitos com ingredientes frescos e naturais, sem aditivos artificiais.</p>
+        </div>
+        <div class="card">
+            <img src="images/visao.png" alt="">
+            <h2>VISÃO</h2>
+            <p>Proporcionar momentos doces e inesquecíveis através de gelatos artesanais de alta qualidade, feitos com ingredientes frescos e naturais, sem aditivos artificiais.</p>
+        </div>
+        <div class="card">
+            <img src="images/valores1.png" alt="">
+            <h2>VALORES</h2>
+            <p>Proporcionar momentos doces e inesquecíveis através de gelatos artesanais de alta qualidade, feitos com ingredientes frescos e naturais, sem aditivos artificiais.</p>
+        </div>
     </div>
+</section>
 
-    </section>
+<section id="secao-obj">
+    <div class="objetivo">
+        <img src="images/objetivo.png" alt="">
+        <h1>OBJETIVO</h1>
+        <p>
+            Nosso objetivo na Fundue Gelato é ser reconhecida como a principal referência em gelatos artesanais, oferecendo uma experiência única e memorável para nossos clientes. Buscamos constantemente inovar em nossos sabores e técnicas de produção, mantendo sempre o compromisso com a qualidade e a autenticidade dos ingredientes.
+            Além disso, queremos expandir nossa presença no mercado, abrindo novas lojas em diferentes regiões e fortalecendo nossa marca através de parcerias estratégicas e ações de marketing eficazes. Estamos dedicados a criar um ambiente acolhedor e amigável em nossas lojas, onde cada cliente se sinta especial e valorizado.
+            A sustentabilidade também é um pilar fundamental de nosso objetivo. Estamos comprometidos em minimizar nosso impacto ambiental através do uso de embalagens eco-friendly, redução de desperdício e apoio a fornecedores locais que compartilham nossos valores.
+            Em resumo, nosso objetivo é não apenas vender gelatos deliciosos, mas também criar uma comunidade de amantes de gelato que apreciam a arte e a paixão por trás de cada sabor que oferecemos.
+        </p>
+    </div>
+</section>
 
-    <section id="secao-sobre" style="background-color: #f8a6a8; height: 100vh; margin: 0; padding: 0;">
-    <h1>a</h1>
-    </section>
-
-    <script>
-    const navbar = document.getElementById("navbar");
-    const homeSection = document.getElementById("secao-home");
-    const fgSection = document.getElementById("secao-fg");
-
-    let isInSpecialSection = false; 
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                if (entry.target.id === "secao-home" || entry.target.id === "secao-fg") {
-                    isInSpecialSection = true;
-                    navbar.classList.remove("navbar-branca"); // rosa original
-                } else {
-                    isInSpecialSection = false;
-                    navbar.classList.add("navbar-branca"); // branca
-                }
-            }
-        });
-    }, { threshold: 0.3 }); // considera visível com 30% da seção na tela
-
-    observer.observe(homeSection);
-    observer.observe(fgSection);
-</script>
 </body>
 </html>
