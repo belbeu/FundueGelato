@@ -10,6 +10,13 @@
 <body>
         <nav class="navegacao" id="navbar">
             <a href="index.html"><img src="images/logo.png" alt="Logo da Fundue Gelato" class="logo"></a>
+
+            <div class="hamburger" onclick="document.querySelector('.menu').classList.toggle('show')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
             <ul class="menu">
                 <li><a href="#secao-home">HOME</a></li>
                 <li><a href="#secao-sobre">SOBRE NÓS</a></li>
@@ -95,24 +102,27 @@
 </section>
 
 <section id="contato">
-    <div class="ctt-img">
-        <img src="images/9568220.jpg" alt="">
-    </div>
-    <div class="ctt-form">
-           <form action="https://formsubmit.co/isabelenicavalcantedasilva@gmail.com" method="POST">
-    <label for="">Nome:</label>
-     <input type="text" name="name" required/>
-     <label for="">E-mail:</label>
-     <input type="email" name="email" required/>
-        <label for="">Nos envie sua proposta:</label>
-        <textarea name="message" rows="5" required></textarea>
-     <input type="hidden" name="_captcha" value="false"/>
-     <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html"/>
-     <button type="submit">Enviar</button>
-</form>
-        
-        </div>
+  <div class="ctt-img">
+    <img src="images/Wavy_Bus-19_Single-03.jpg" alt="">
+  </div>
+  <div class="ctt-form">
+    <form action="https://formspree.io/f/mjkejaoj" method="POST">
+      <label for="">Nome:</label>
+      <input type="text" name="nome" required />
+
+      <label for="">E-mail:</label>
+      <input type="email" name="email" required />
+
+      <label for="">Nos envie sua proposta:</label>
+      <textarea name="mensagem" rows="5" required></textarea>
+
+      <input type="hidden" name="_next" value="obrigado.html" />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
 </section>
+
 
 </body>
 </html>

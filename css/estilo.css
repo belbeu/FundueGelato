@@ -194,6 +194,22 @@ header h1{
     font-family: Open Sans;
 }
 
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fa7ad6;
+  border-radius: 2px;
+}
+
+
 #secao-mvv {
     padding: 50px 20px;
     background: #f9f9f9;
@@ -281,7 +297,7 @@ header h1{
 
 #contato .ctt-img img {
     width: 100%;
-    max-width: 500px;
+    max-width: 455px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -289,7 +305,7 @@ header h1{
 #contato form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     background: #fff;
     padding: 25px;
     border-radius: 15px;
@@ -383,6 +399,113 @@ header h1{
     background: #7a3c1a;
 }
 
+/* ===== RESPONSIVIDADE GERAL ===== */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 70px;
+  }
+  header main {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  header h1 {
+    font-size: 50px;
+  }
+  header main {
+    font-size: 25px;
+  }
+
+  /* Menu hamburguer */
+  .hamburger {
+    display: flex;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .menu.show {
+    display: flex;
+  }
+
+  /* Sobre nós */
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sobre .text {
+    font-size: 14px;
+  }
+  .sobre h1 {
+    font-size: 28px;
+  }
+  .sobre .vetor img {
+    max-width: 80%;
+  }
+
+  /* Cards */
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    max-width: 90%;
+    margin: 15px 0;
+  }
+
+  /* Objetivo */
+  .objetivo img {
+    width: 100px;
+    height: 100px;
+  }
+  .objetivo h1 {
+    font-size: 28px;
+  }
+  .objetivo p {
+    font-size: 14px;
+  }
+
+  /* Contato */
+  #contato {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  #contato .ctt-img img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 35px;
+  }
+  header main {
+    font-size: 20px;
+  }
+  .logo {
+    height: 50px;
+  }
+  nav ul li {
+    margin-left: 10px;
+  }
+  .sobre p,
+  .objetivo p,
+  .card p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
 /* Animação de entrada */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
