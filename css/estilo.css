@@ -21,7 +21,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px 20px;
     position: fixed; 
     top: 0;           
     left: 0;
@@ -69,13 +69,25 @@ nav ul li a{
     text-decoration: none;
 }
 
-header, section{
+header {
+    background: white;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh; /* <-- trocado */
     flex-direction: column;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 60px 20px; /* <-- adiciona espaçamento */
+    height: auto;       /* <-- deixa altura automática */
 }
 
 section{
@@ -228,10 +240,10 @@ header h1{
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    flex: 1 1 250px; /* ocupa espaço flexível mas com largura mínima */
+    flex: 1 1 250px;
     max-width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 20px;
+    margin-left: 20px auto;
 }
 
 .card img{
@@ -427,12 +439,22 @@ header h1{
     flex-direction: column;
     background: #fff;
     position: absolute;
-    top: 70px;
+    top: 90px;
     right: 20px;
-    width: 200px;
+    width: 220px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  #Contato-btn {
+    display: block;
+    margin-top: 15px;   /* espaço do link anterior */
+    padding: 12px 0;    /* ocupa toda a largura */
+    text-align: center; /* centraliza o texto */
+    width: 100%;
+    background-color: rgb(73, 31, 6);
+    color: white;
+    border-radius: 8px;
   }
   .menu.show {
     display: flex;
@@ -479,7 +501,7 @@ header h1{
   #contato {
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+    padding: 40px;
   }
   #contato .ctt-img img {
     max-width: 100%;
@@ -511,7 +533,6 @@ header h1{
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 
 @media (max-width: 768px) {
     #contato {
